@@ -1,0 +1,96 @@
+/*----------------------------- Editor Style -----------------------------*/
+.max-slider-editor {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    text-align: center;
+    display: flex;
+    background: #000000b0;
+    
+    .max-slider-add-slide {
+        height: 50vh;
+        margin: auto;
+        background: #1a1c1e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        .max-slider-add-slide-title {
+            margin-bottom: 40px;
+            display: block;
+            font-size: 36px;
+            text-transform: capitalize;
+        }
+
+        .max-slider-add-slide-form {
+            display: inline-flex;
+            margin-inline-end: 10px;
+
+            #max-slider-slide-name {
+                width: 35vw;
+                height: 45px;
+                margin-inline-end: 10px;
+                font-size: 15px;
+                font-weight: 400;
+                padding: 15px;
+            }
+
+            #add-max-slider-slide {
+                padding: 8px 50px;
+                background: #0a875a;
+                border: none;
+                border-radius: 3px;
+                font-size: 17px;
+                font-weight: 600;
+                cursor: pointer;
+                width: auto;
+            }
+        }
+    }
+
+    .editor-container {
+        height: 90vh;
+        width: 95%;
+        margin: auto;
+
+        .editor-controllers {
+            background: #1a1c1e;
+            height: 40px;
+            display: flex;
+            justify-content: end;
+    
+            .close-max-slider-editor {
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                border: 1px solid #ffffff4a;
+                color: #fff;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+
+        .editor-view {
+            width: 100%;
+            height: calc(90vh - 40px);
+        }
+    }
+}
+
+.max-slider-pro-tag {
+    background: #007fff;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px;
+    margin-inline-start: 5px;
+    font-size: 10px;
+}
+
+.max-slider-pro-url {
+    text-decoration: underline !important;
+    color: #fff !important;
+}

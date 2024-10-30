@@ -1,0 +1,30 @@
+/*----------------------------- Max Parallax Slider Style -----------------------------*/
+.max-parallax-slider {
+	position: relative;
+
+    .swiper-container {
+        position: relative;
+    }
+
+    .swiper-slide {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+
+        .max-slide {
+
+            .max-slider-parallex {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+            }
+
+        }
+    }
+	.swiper-slide-active {
+		z-index: 3; 
+	}
+}

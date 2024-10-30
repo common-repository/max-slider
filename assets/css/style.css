@@ -1,0 +1,130 @@
+/*----------------------------- Max Slider Style -----------------------------*/
+/*----------------------------- Max Slider Arrows Style -----------------------------*/
+.max-slider .swiper-container {
+  overflow: hidden;
+}
+.max-slider .swiper-vertical .swiper-slide {
+  height: auto !important;
+}
+.max-slider .swiper-material-content {
+  overflow: hidden;
+}
+.max-slider.max-slider-active-content .swiper-slide:not(.swiper-slide-active) .max-slider-content {
+  opacity: 0;
+  animation: fadeOut 0.5s;
+}
+.max-slider.max-slider-active-content .swiper-slide:not(.swiper-slide-active) .max-slider-content {
+  display: none;
+}
+.max-slider.max-slider-active-content .swiper-slide.swiper-slide-active .max-slider-content {
+  opacity: 1;
+  animation: fadeIn 0.5s;
+}
+.max-slider .max-slider-arrows {
+  color: #ccc;
+  font-size: 13px;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  margin: 5px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  border-radius: 50%;
+  background: none;
+}
+.max-slider .max-slider-arrows:after {
+  display: none;
+}
+.max-slider .max-slider-arrows.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
+.max-slider .max-slider-arrows.swiper-button-next .max-slider-arrow-text {
+  margin-right: 8px;
+}
+.max-slider .max-slider-arrows.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+}
+.max-slider .max-slider-arrows.swiper-button-prev .max-slider-arrow-text {
+  margin-left: 8px;
+}
+.max-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+  display: block;
+  right: 50%;
+  left: unset;
+  transform: translateX(50%);
+}
+.max-slider .swiper-pagination-bullets.swiper-pagination-vertical {
+  width: auto;
+  display: block;
+  top: 50%;
+  bottom: unset;
+  transform: translateY(50%);
+}
+.max-slider .swiper-pagination-fraction {
+  width: auto;
+  display: block;
+  right: 50%;
+  left: unset;
+  transform: translateX(50%);
+}
+.max-slider .swiper-scrollbar.scrollbar-horizontal {
+  position: absolute;
+  bottom: 15px;
+  z-index: 10;
+  left: unset;
+  margin: 0 1%;
+  width: 98%;
+  height: 4.5px;
+}
+.max-slider .swiper-scrollbar.scrollbar-horizontal .swiper-scrollbar-drag {
+  height: 4.5px;
+}
+.max-slider .swiper-scrollbar.scrollbar-vertical {
+  position: absolute;
+  right: 15px;
+  z-index: 10;
+  top: 0;
+  margin: 1% 0;
+  display: block;
+  height: 94%;
+  width: 4.5px;
+}
+.max-slider .swiper-scrollbar.scrollbar-vertical .swiper-scrollbar-drag {
+  width: 4.5px;
+}
+.max-slider .arrows-pagination-container {
+  z-index: 1;
+}
+
+/*----------------------------- Max Parallax Slider Style -----------------------------*/
+.max-parallax-slider {
+  position: relative;
+}
+.max-parallax-slider .swiper-container {
+  position: relative;
+}
+.max-parallax-slider .swiper-slide {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.max-parallax-slider .swiper-slide .max-slide.max-slider-parallex {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.max-parallax-slider .swiper-slide {
+  z-index: 1;
+}
+.max-parallax-slider .swiper-slide-active {
+  z-index: 3;
+}/*# sourceMappingURL=style.css.map */
